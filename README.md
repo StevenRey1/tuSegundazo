@@ -1,5 +1,8 @@
 # TuSegundazo
 
+![image](https://github.com/StevenRey1/tuSegundazo/assets/157659620/604fda5d-3dc8-4dad-a39a-c03e11d9092e)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
 
 ## Development server
