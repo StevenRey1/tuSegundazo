@@ -1,21 +1,26 @@
-
 <div class="col-6 pt-3">
-    <table class="table">
-      <thead class="table-dark">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Marca</th>
-          <th scope="col">Línea</th>
-          <th scope="col">Modelo</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let vehiculo of vehiculos">
-          <td>{{ vehiculo.id }}</td>
-          <td>{{ vehiculo.marca }}</td>
-          <td>{{ vehiculo.linea }}</td>
-          <td>{{ vehiculo.modelo }}</td>
-        </tr>
-      </tbody>
-    </table>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Línea</th>
+        <th scope="col">Modelo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vehiculo of vehiculos">
+        <td>{{ vehiculo.id }}</td>
+        <td>{{ vehiculo.marca }}</td>
+        <td>{{ vehiculo.linea }}</td>
+        <td>{{ vehiculo.modelo }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="col-6 ">
+    <p class="m-0" *ngFor="let marca of conteoMarcas | keyvalue"> <!-- Usa keyvalue para recorrer el objeto -->
+      Total {{ marca.key }}: {{ marca.value }} <!-- Muestra la marca y su conteo -->
+    </p>
 </div>
