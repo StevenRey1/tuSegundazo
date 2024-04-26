@@ -2,7 +2,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { VehicleListComponent } from './vehicle-list.component';
 
 describe('VehicleListComponent', () => {
@@ -11,6 +11,7 @@ describe('VehicleListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule],
       declarations: [ VehicleListComponent ]
     })
     .compileComponents();
