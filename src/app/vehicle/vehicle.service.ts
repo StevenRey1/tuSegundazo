@@ -12,7 +12,7 @@ export class VehicleService {
 
   constructor(private http: HttpClient) {}
 
-  getDirectores(): Observable<Vehicle[]> {
+  getVehicles(): Observable<Vehicle[]> {
     return this.http.get<Vehicle[]>(this.apiUrl);
   }
 
